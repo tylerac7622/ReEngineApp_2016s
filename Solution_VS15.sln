@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_Basics", "01_Basics\01_Basics.vcxproj", "{425ED9DA-852E-4F61-BE06-487F68A6187E}"
 EndProject
@@ -46,6 +46,12 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A05_Transformations", "A05_Transformations\A05_Transformations.vcxproj", "{AABA05C7-71CD-4C9B-A52F-78117CDBC72D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A04s_3DShapes_DEMO", "A04s_3DShapes\A04s_3DShapes.vcxproj", "{1249A06E-032E-4611-8749-E48CB5FCFF68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{2D1B6711-5C2F-40D1-81B0-C84AEDAA4353}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "W5R_Rotations_DEMO", "W5R_Rotations_DEMO\W5R_Rotations_DEMO.vcxproj", "{DBB63B9E-3E43-4E40-8601-29BE9FAC2ABD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "E06s_Transformations_DEMO", "E06s_Transformations\E06s_Transformations.vcxproj", "{E50356C3-1F4D-45BC-8A3F-7D26EE9A25B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,6 +119,14 @@ Global
 		{1249A06E-032E-4611-8749-E48CB5FCFF68}.Debug|x86.Build.0 = Debug|Win32
 		{1249A06E-032E-4611-8749-E48CB5FCFF68}.Release|x86.ActiveCfg = Release|Win32
 		{1249A06E-032E-4611-8749-E48CB5FCFF68}.Release|x86.Build.0 = Release|Win32
+		{DBB63B9E-3E43-4E40-8601-29BE9FAC2ABD}.Debug|x86.ActiveCfg = Debug|Win32
+		{DBB63B9E-3E43-4E40-8601-29BE9FAC2ABD}.Debug|x86.Build.0 = Debug|Win32
+		{DBB63B9E-3E43-4E40-8601-29BE9FAC2ABD}.Release|x86.ActiveCfg = Release|Win32
+		{DBB63B9E-3E43-4E40-8601-29BE9FAC2ABD}.Release|x86.Build.0 = Release|Win32
+		{E50356C3-1F4D-45BC-8A3F-7D26EE9A25B8}.Debug|x86.ActiveCfg = Debug|Win32
+		{E50356C3-1F4D-45BC-8A3F-7D26EE9A25B8}.Debug|x86.Build.0 = Debug|Win32
+		{E50356C3-1F4D-45BC-8A3F-7D26EE9A25B8}.Release|x86.ActiveCfg = Release|Win32
+		{E50356C3-1F4D-45BC-8A3F-7D26EE9A25B8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -133,5 +147,7 @@ Global
 		{2DD9F919-629E-43B6-9B81-181B2F761873} = {0B1C8EE7-E852-45B2-A546-BE37B521048A}
 		{AABA05C7-71CD-4C9B-A52F-78117CDBC72D} = {124C8EDD-52BA-4EAA-A1F4-6D4302AB5DEC}
 		{1249A06E-032E-4611-8749-E48CB5FCFF68} = {124C8EDD-52BA-4EAA-A1F4-6D4302AB5DEC}
+		{DBB63B9E-3E43-4E40-8601-29BE9FAC2ABD} = {2D1B6711-5C2F-40D1-81B0-C84AEDAA4353}
+		{E50356C3-1F4D-45BC-8A3F-7D26EE9A25B8} = {0B1C8EE7-E852-45B2-A546-BE37B521048A}
 	EndGlobalSection
 EndGlobal
