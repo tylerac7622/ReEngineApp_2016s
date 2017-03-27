@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_Basics", "01_Basics\01_Basics.vcxproj", "{425ED9DA-852E-4F61-BE06-487F68A6187E}"
 EndProject
@@ -64,6 +64,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A05s_Transformations_DEMO", "A05s_Transformations\A05s_Transformations.vcxproj", "{731BEF6C-42D8-41D5-9C26-FCC908241B92}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "W7R_SLERP_DEMO", "W7R_SLERP_DEMO\W7R_SLERP_DEMO.vcxproj", "{F586EF79-529C-4737-B8BD-79C899828529}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "E10_Projections", "E10_Projections\E10_Projections.vcxproj", "{9B6650A4-8EB9-4CBC-A25C-10726F0BD80D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -163,6 +165,10 @@ Global
 		{F586EF79-529C-4737-B8BD-79C899828529}.Debug|x86.Build.0 = Debug|Win32
 		{F586EF79-529C-4737-B8BD-79C899828529}.Release|x86.ActiveCfg = Release|Win32
 		{F586EF79-529C-4737-B8BD-79C899828529}.Release|x86.Build.0 = Release|Win32
+		{9B6650A4-8EB9-4CBC-A25C-10726F0BD80D}.Debug|x86.ActiveCfg = Debug|Win32
+		{9B6650A4-8EB9-4CBC-A25C-10726F0BD80D}.Debug|x86.Build.0 = Debug|Win32
+		{9B6650A4-8EB9-4CBC-A25C-10726F0BD80D}.Release|x86.ActiveCfg = Release|Win32
+		{9B6650A4-8EB9-4CBC-A25C-10726F0BD80D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -191,5 +197,6 @@ Global
 		{EF817BA9-17FE-44E0-B405-C5962E93B613} = {124C8EDD-52BA-4EAA-A1F4-6D4302AB5DEC}
 		{731BEF6C-42D8-41D5-9C26-FCC908241B92} = {124C8EDD-52BA-4EAA-A1F4-6D4302AB5DEC}
 		{F586EF79-529C-4737-B8BD-79C899828529} = {2D1B6711-5C2F-40D1-81B0-C84AEDAA4353}
+		{9B6650A4-8EB9-4CBC-A25C-10726F0BD80D} = {0B1C8EE7-E852-45B2-A546-BE37B521048A}
 	EndGlobalSection
 EndGlobal
