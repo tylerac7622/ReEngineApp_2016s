@@ -15,6 +15,22 @@ void AppClass::Update(void)
 
 #pragma region YOUR CODE GOES HERE
 	modelMatrix = IDENTITY_M4;
+
+	if (fTimer < 2)
+	{
+		modelMatrix *= glm::translate(0.0f, 1.5f * fTimer, 0.0f);
+	}
+	else
+	{
+		modelMatrix *= glm::translate(0.0f, (4 - fTimer) * 1.5f, 0.0f);
+	}
+	quaternion quat2 = glm::angleAxis(180.0f * fTimer, vector3(0.0f, 0.0f, 1.0f));
+	modelMatrix *= ToMatrix4(quat2);
+
+	if (fTimer > 4)
+	{
+		fTimer -= 4;
+	}
 #pragma endregion
 
 #pragma region DOES NOT NEED CHANGES
