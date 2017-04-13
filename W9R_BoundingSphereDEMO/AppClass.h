@@ -15,6 +15,8 @@ class AppClass : public ReEngAppClass
 {
 	vector3 m_v3Position;
 	MyBoundingSphereClass* m_pBS0;
+	MyBoundingSphereClass* m_pBS1;
+	MyBoundingSphereClass* m_pBS2;
 public:
 	typedef ReEngAppClass super;
 	/*

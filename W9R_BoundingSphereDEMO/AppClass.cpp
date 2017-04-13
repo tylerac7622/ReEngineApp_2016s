@@ -13,7 +13,18 @@ void AppClass::InitVariables(void)
 		REAXISY);//What is up
 	//Load a model onto the Mesh manager
 	m_pMeshMngr->LoadModel("Minecraft\\Zombie.obj", "Zombie");
+	m_pMeshMngr->LoadModel("Minecraft\\Steve.obj", "Steve");
+	m_pMeshMngr->LoadModel("Minecraft\\Cow.obj", "Cow");
+	//creating bounding spheres for both models
 	m_pBS0 = new MyBoundingSphereClass(m_pMeshMngr->GetVertexList("Zombie"));
+	m_pBS1 = new MyBoundingSphereClass(m_pMeshMngr->GetVertexList("Steve"));
+	m_pBS2 = new MyBoundingSphereClass(m_pMeshMngr->GetVertexList("Cow"));
+
+	matrix4 m4Position = glm::translate(vector3(3.0, 0.0, 0.0));
+	m_pMeshMngr->SetModelMatrix(m4Position, "Steve");
+
+	matrix4 m4Position2 = glm::translate(vector3(2.5, 2.0, 0.0));
+	m_pMeshMngr->SetModelMatrix(m4Position2, "Cow");
 }
 
 void AppClass::Update(void)
@@ -31,11 +42,56 @@ void AppClass::Update(void)
 	//Call the arcball method
 	ArcBall();
 
-	//set the translate to create the transform matrix
-	matrix4 m4Translate = glm::translate(m_v3Position);
-	m_pMeshMngr->SetModelMatrix(m4Translate, "Zombie"); //set the matrix to the model
-	m_pBS0->RenderSphere();//render the bounding sphere
+	//Object Movement
+	static float fTimer = 0.0f;
+	static int nClock = m_pSystem->GenClock();
+	float fDeltaTime = static_cast<float>(m_pSystem->LapClock(nClock));
+	fTimer += fDeltaTime;
+	static vector3 v3Start = vector3(3.0, 0.0, 0.0);
+	static vector3 v3End = vector3(5.0, 0.0, 0.0);
+	float fPercentage = MapValue(fTimer, 0.0f, 3.0f, 0.0f, 1.0f);
+	vector3 v3Current = glm::lerp(v3Start, v3End, fPercentage);
+	matrix4 mTranslation = glm::translate(v3Current);
 
+	//set the translate to create the transform matrix
+	matrix4 m4Transform = glm::translate(m_v3Position) * ToMatrix4(m_qArcBall);
+	m_pMeshMngr->SetModelMatrix(m4Transform, "Zombie"); //set the matrix to the model
+	m_pBS0->SetModelMatrix(m_pMeshMngr->GetModelMatrix("Zombie"));
+	m_pBS0->RenderSphere();//render the bounding sphere
+		
+
+	m_pMeshMngr->SetModelMatrix(mTranslation, "Steve");
+	m_pBS1->SetModelMatrix(m_pMeshMngr->GetModelMatrix("Steve"));
+	m_pBS1->RenderSphere();
+
+	m_pBS2->SetModelMatrix(m_pMeshMngr->GetModelMatrix("Cow"));
+	m_pBS2->RenderSphere();
+
+	m_pBS0->SetColliding(false);
+	m_pBS1->SetColliding(false);
+	m_pBS2->SetColliding(false);
+
+	if (m_pBS0->IsColliding(m_pBS1))
+	{
+		m_pBS0->SetColliding(true);
+		m_pBS1->SetColliding(true);
+	}
+	if (m_pBS0->IsColliding(m_pBS2))
+	{
+		m_pBS0->SetColliding(true);
+		m_pBS2->SetColliding(true);
+	}
+	if (m_pBS1->IsColliding(m_pBS2))
+	{
+		m_pBS1->SetColliding(true);
+		m_pBS2->SetColliding(true);
+	}
+
+	if (fPercentage > 1.0f)
+	{
+		fTimer = 0.0f;
+		std::swap(v3Start, v3End);
+	}
 
 	//Adds all loaded instance to the render list
 	m_pMeshMngr->AddSkyboxToRenderList();
@@ -50,13 +106,13 @@ void AppClass::Update(void)
 	m_pMeshMngr->PrintLine(m_pSystem->GetAppName(), REYELLOW);
 
 	m_pMeshMngr->Print("Radius: ");
-	m_pMeshMngr->PrintLine(std::to_string(m_pBS0->m_fRadius), RERED);
+	m_pMeshMngr->PrintLine(std::to_string(m_pBS0->GetRadius()), RERED);
 	m_pMeshMngr->Print("Center: (");
-	m_pMeshMngr->Print(std::to_string(m_pBS0->m_v3CenterGlobal.x), RERED);
+	m_pMeshMngr->Print(std::to_string(m_pBS0->GetCenterGlobal().x), RERED);
 	m_pMeshMngr->Print(" , ");
-	m_pMeshMngr->Print(std::to_string(m_pBS0->m_v3CenterGlobal.y), RERED);
+	m_pMeshMngr->Print(std::to_string(m_pBS0->GetCenterGlobal().y), RERED);
 	m_pMeshMngr->Print(" , ");
-	m_pMeshMngr->Print(std::to_string(m_pBS0->m_v3CenterGlobal.z), RERED);
+	m_pMeshMngr->Print(std::to_string(m_pBS0->GetCenterGlobal().z), RERED);
 	m_pMeshMngr->PrintLine(")");
 
 	m_pMeshMngr->Print("FPS:");
@@ -77,11 +133,7 @@ void AppClass::Display(void)
 void AppClass::Release(void)
 {
 	SafeDelete(m_pBS0);
-
-	if (m_pBS0 != nullptr)
-	{
-		delete m_pBS0;
-		m_pBS0 = nullptr;
-	}
+	SafeDelete(m_pBS1);
+	SafeDelete(m_pBS2);
 	super::Release(); //release the memory of the inherited fields
 }
