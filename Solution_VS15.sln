@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_Basics", "01_Basics\01_Basics.vcxproj", "{425ED9DA-852E-4F61-BE06-487F68A6187E}"
 EndProject
@@ -94,6 +94,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ex01_Bs_DEMO", "Ex01_Bs_DEMO\Ex01_Bs_DEMO.vcxproj", "{CFC6D267-B5AA-4068-9A71-E307D84B19F1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GLFW_Example", "GLFW_Example\GLFW_Example_VS15.vcxproj", "{49647803-64C5-4742-BCB2-C8DC671B25EF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A10s_BoundingObjectSingleton_DEMO", "A10s_BoundingObjectSingleton\A10s_BoundingObjectSingleton.vcxproj", "{13FA2754-46C1-49D8-B9A4-1DC856801931}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "E13s_BoundingBoxClass_DEMO", "E13s_BoundingBoxClass\E13s_BoundingBoxClass.vcxproj", "{ECF77324-3C73-4C41-A5FA-D2291E7748E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -253,6 +257,14 @@ Global
 		{49647803-64C5-4742-BCB2-C8DC671B25EF}.Debug|x86.Build.0 = Debug|Win32
 		{49647803-64C5-4742-BCB2-C8DC671B25EF}.Release|x86.ActiveCfg = Release|Win32
 		{49647803-64C5-4742-BCB2-C8DC671B25EF}.Release|x86.Build.0 = Release|Win32
+		{13FA2754-46C1-49D8-B9A4-1DC856801931}.Debug|x86.ActiveCfg = Debug|Win32
+		{13FA2754-46C1-49D8-B9A4-1DC856801931}.Debug|x86.Build.0 = Debug|Win32
+		{13FA2754-46C1-49D8-B9A4-1DC856801931}.Release|x86.ActiveCfg = Release|Win32
+		{13FA2754-46C1-49D8-B9A4-1DC856801931}.Release|x86.Build.0 = Release|Win32
+		{ECF77324-3C73-4C41-A5FA-D2291E7748E0}.Debug|x86.ActiveCfg = Debug|Win32
+		{ECF77324-3C73-4C41-A5FA-D2291E7748E0}.Debug|x86.Build.0 = Debug|Win32
+		{ECF77324-3C73-4C41-A5FA-D2291E7748E0}.Release|x86.ActiveCfg = Release|Win32
+		{ECF77324-3C73-4C41-A5FA-D2291E7748E0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -296,5 +308,7 @@ Global
 		{E621845F-CFA0-4208-88AC-C9F9E0B1055A} = {8A9C6231-C3D4-493B-A18E-E134FC3A1A35}
 		{CFC6D267-B5AA-4068-9A71-E307D84B19F1} = {8A9C6231-C3D4-493B-A18E-E134FC3A1A35}
 		{49647803-64C5-4742-BCB2-C8DC671B25EF} = {77A006BE-0096-461D-AC30-32ECAA2B3FDA}
+		{13FA2754-46C1-49D8-B9A4-1DC856801931} = {124C8EDD-52BA-4EAA-A1F4-6D4302AB5DEC}
+		{ECF77324-3C73-4C41-A5FA-D2291E7748E0} = {0B1C8EE7-E852-45B2-A546-BE37B521048A}
 	EndGlobalSection
 EndGlobal
