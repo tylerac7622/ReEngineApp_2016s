@@ -241,6 +241,12 @@ public:
 	*/
 	void AddInstanceToRenderList(String a_sInstance = "ALL");
 	/*
+	USAGE: Renders the specified list of names to the render list
+	ARGUMENTS:
+	OUTPUT: ---
+	*/
+	void AddInstanceToRenderList(std::vector<String> a_lInstances);
+	/*
 	USAGE: Renders a line on with the specified vectors and color
 	ARGUMENTS:
 	OUTPUT: ---
