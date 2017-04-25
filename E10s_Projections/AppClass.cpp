@@ -16,6 +16,8 @@ void AppClass::InitVariables(void)
 	//Calculate the first projections
 	m_m4Projection = glm::perspective(45.0f, 1080.0f / 768.0f, 0.01f, 1000.0f);
 	m_m4View = glm::lookAt(glm::vec3(0.0f, 0.0f, 15.0f), glm::vec3(0.0f, 0.0f, 14.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+
+	m_pMeshMngr->LoadModel("Minecraft\\Steve.obj", "Steve");
 }
 
 void AppClass::Update(void)
@@ -36,10 +38,13 @@ void AppClass::Display(void)
 	ClearScreen();
 	
 	//Render the cone
-	m_pCone->Render(m_m4Projection, m_m4View, IDENTITY_M4);
+	//m_pCone->Render(m_m4Projection, m_m4View, IDENTITY_M4);
+
+	m_pCameraMngr->SetProjectionMatrix(m_m4Projection);
+	m_pCameraMngr->SetViewMatrix(m_m4View);
 
 	//Render the cylinder
-	m_pCylinder->Render(m_m4Projection, m_m4View, glm::translate(IDENTITY_M4, REAXISZ * -3.0f));
+	//m_pCylinder->Render(m_m4Projection, m_m4View, glm::translate(IDENTITY_M4, REAXISZ * -3.0f));
 	
 	//Render the grid based on the camera's mode:
 	m_pMeshMngr->AddGridToRenderListBasedOnCamera(m_pCameraMngr->GetCameraMode());
