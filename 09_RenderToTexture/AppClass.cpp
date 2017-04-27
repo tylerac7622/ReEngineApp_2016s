@@ -42,7 +42,7 @@ void AppClass::InitVariables(void)
 		also creates a new copy to the material manager with the original in case I want to go back to it, the word
 		Original (capitalized) is a wildcard to maintain the current texture associated with it
 	*/
-	m_pMeshMngr->ModifyMaterialOnInstance("Monitor", "M_Display", "M_Display2", "3_Earth.png", "Original", "Original");
+	m_pMeshMngr->ModifyMaterialOnInstance("Monitor", "M_Display", "M_Display2", "3_Earth.png", "BrickNormal.png", "Original");
 	m_pMeshMngr->ModifyMaterialOnInstance("Monitor2", "M_Display", "M_Display2", "cloud.png");
 	
 
