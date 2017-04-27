@@ -83,6 +83,13 @@ public:
 	OUTPUT: ---
 	*/
 	void SetDiffuseMapName(String a_sFileName);
+	/*
+	USAGE: Sets the OpenGL buffer identifier directly on to the material
+	ARGUMENTS:
+	GLuint a_uID -> OpenGL Buffer identifier
+	OUTPUT: ---
+	*/
+	void SetDiffuseMapID(GLuint a_uID);
 
 	/*
 	USAGE: Gets the diffuse map file name
@@ -98,6 +105,14 @@ public:
 	OUTPUT: ---
 	*/
 	void SetNormalMapName(String a_sFileName);
+
+	/*
+	USAGE: Sets the OpenGL buffer identifier directly on to the material
+	ARGUMENTS:
+	GLuint a_uID -> OpenGL Buffer identifier
+	OUTPUT: ---
+	*/
+	void SetNormalMapID(GLuint a_uID);
 	
 	/*
 	USAGE: Gets the normal map file name
@@ -113,6 +128,14 @@ public:
 	OUTPUT: ---
 	*/
 	void SetSpecularMapName(String a_sFileName);
+
+	/*
+	USAGE: Sets the OpenGL buffer identifier directly on to the material
+	ARGUMENTS:
+	GLuint a_uID -> OpenGL Buffer identifier
+	OUTPUT: ---
+	*/
+	void SetSpecularMapID(GLuint a_uID);
 	
 	/*
 	USAGE: Gets the specular map file name

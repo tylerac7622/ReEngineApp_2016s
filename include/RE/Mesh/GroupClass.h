@@ -506,6 +506,13 @@ public:
 	*/
 	bool IsColliding(vector3 a_v3RayOrigin, vector3 a_v3RayDirection, float& a_fDistance, int a_nCurrentFrame);
 
+	/*
+	USAGE: Duplicate the materials in the group with new ones
+	ARGUMENTS: ---
+	OUTPUT: ---
+	*/
+	void DuplicateMaterials(String a_sPrefix);
+
 private:
 	/*
 	USAGE:

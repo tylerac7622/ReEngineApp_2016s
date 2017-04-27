@@ -1,6 +1,6 @@
 /*----------------------------------------------
 Programmer: Alberto Bobadilla (labigm@gmail.com)
-Date: 2015/09 (Last Modified on: 15/11)
+Date: 2017/04 (Last Modified on: 17/04)
 ----------------------------------------------*/
 #ifndef __APPLICATION_H_
 #define __APPLICATION_H_
@@ -12,10 +12,12 @@ using namespace ReEng; //Using ReEng namespace to use all the classes in the dll
 
 class AppClass : public ReEngAppClass
 {
-	float m_fDepth = 0.0f;
-	TextureManagerSingleton* m_pTextureMngr = nullptr;
-	String m_sTexture;
-	bool m_bUsingTexture = false;
+	//Buffers to draw the scene into
+	GLuint m_nFrameBuffer1 = 0;
+	GLuint m_nDepthBuffer1 = 0;
+	GLuint m_nTexture1 = 0;
+
+	uint m_nSecondaryCamera = 0;
 public:
 	typedef ReEngAppClass super;
 

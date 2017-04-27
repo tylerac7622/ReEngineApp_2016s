@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{05BD95CA-C5F7-45E3-A252-EF522EAAA809}</ProjectGuid>
-    <RootNamespace>07_RenderTarget</RootNamespace>
-    <ProjectName>07_RenderTarget</ProjectName>
+    <ProjectGuid>{6054516C-BBA5-41F8-83C3-EADDE863B62F}</ProjectGuid>
+    <RootNamespace>09_RenderToTexture</RootNamespace>
+    <ProjectName>09_RenderToTexture</ProjectName>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

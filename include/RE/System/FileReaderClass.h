@@ -232,7 +232,8 @@ public:
 	
 	USAGE:
 	ARGUMENTS:
-	OUTPUT:
+	OUTPUT: will return REERRORS::RE_DONE when done
+		OR RE_RUNNING when running
 	*/
 	REERRORS ReadNextLine(bool a_bSkipComments = true);
 	/* 

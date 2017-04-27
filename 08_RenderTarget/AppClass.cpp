@@ -1,9 +1,9 @@
 #include "AppClass.h"
 void AppClass::InitWindow(String a_sWindowName)
 {
-	super::InitWindow("Render Tagets (Render to texture)"); // Window Name
+	super::InitWindow("Render Tagets (Render to texture in stereo)"); // Window Name
 	m_v4ClearColor = vector4(RECORNFLOWERBLUE, 0.0f);
-	//m_pSystem->SetWindowFullscreen(RESOLUTIONS::C_1920x1080_16x9_FULLHD);
+	m_pSystem->SetWindowFullscreen(RESOLUTIONS::C_1920x1080_16x9_FULLHD);
 }
 
 void AppClass::InitVariables(void)
