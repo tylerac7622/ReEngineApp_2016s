@@ -12,8 +12,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{625922B3-FF5F-49AF-84A3-8E4BAD5B8DC4}</ProjectGuid>
-    <RootNamespace>W9R_BoundingSphereDEMO</RootNamespace>
-    <ProjectName>W9R_BoundingSphereDEMO</ProjectName>
+    <RootNamespace>W09R_BoundingSphereDEMO</RootNamespace>
+    <ProjectName>W09R_BoundingSphereDEMO</ProjectName>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
