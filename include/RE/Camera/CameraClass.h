@@ -33,6 +33,8 @@ namespace ReEng
 		matrix4 m_m4Projection = matrix4(1.0f);
 		matrix4 m_m4View = matrix4(1.0f);
 
+		bool m_bInternalCalculation = true;
+
 	public:
 		/*
 		USAGE: Constructor
@@ -273,6 +275,22 @@ namespace ReEng
 		OUTPUT: ---
 		*/
 		void ResetCamera(void);
+
+		/*
+		USAGE: Sets the view Matrix overriding the internal values
+		note, to reset the camera to use internal values it needs to be reset
+		ARGUMENTS: matrix4 view matrix
+		OUTPUT: ---
+		*/
+		void SetViewMatrix(matrix4 input);
+
+		/*
+		USAGE: Sets the projection Matrix overriding the internal values
+		note, to reset the camera to use internal values it needs to be reset
+		ARGUMENTS: matrix4 view matrix
+		OUTPUT: ---
+		*/
+		void SetProjectionMatrix(matrix4 input);
 
 	private:
 		/*

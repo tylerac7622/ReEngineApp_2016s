@@ -204,6 +204,7 @@ public:
 	OUTPUT: ---
 	*/
 	void SetRenderTarget(GLuint a_nFrameBuffer = 0, GLuint a_nDepthBuffer = 0, GLuint a_nTextureToRender = 0);
+
 	/*
 	USAGE: Renders the specified texture on a plane right in front of the camera
 	ARGUMENTS: GLuint a_uGLIndex index of the texture in opengl (not in the texture manager)
@@ -240,6 +241,12 @@ public:
 	OUTPUT: ---
 	*/
 	void AddInstanceToRenderList(String a_sInstance = "ALL");
+	/*
+	USAGE: Renders the specified list of names to the render list
+	ARGUMENTS:
+	OUTPUT: ---
+	*/
+	void AddInstanceToRenderList(std::vector<String> a_lInstances);
 	/*
 	USAGE: Renders a line on with the specified vectors and color
 	ARGUMENTS:
@@ -379,6 +386,40 @@ public:
 		FORMAT a_Format,
 		String a_sInstanceName,
 		bool a_bAbsoluteRoute = false);
+	/*
+	USAGE: Replaces the specified material of one Instance in memory by a new material with the
+	name specified by newMaterial, using Original will keep the textures the instance already have
+	in memory. If DuplicateInstanceMaterial is not called it will modify all instances of the model
+	ARGUMENTS:
+	String a_sInstance, // name of the instance to modify
+	String a_sOldMaterialName, // name of the material to change
+	String a_sNewMaterialName, // new name for that material
+	String a_sDiffuseTexture = "Original", //new texture to load, Original for the same texture
+	String a_sNormalTexture = "Original", //new texture to load, Original for the same texture
+	String a_sSpecularTexture = "Original"); //new texture to load, Original for the same texture
+	OUTPUT: void
+	*/
+	void ModifyMaterialOnInstance(String a_sInstance,
+		String a_sOldMaterialName,
+		String a_sNewMaterialName,
+		String a_sDiffuseTexture = "Original",
+		String a_sNormalTexture = "Original",
+		String a_sSpecularTexture = "Original");
+
+	/*
+	USAGE: Returns the material pointer in the Material Manager from the specified Instance
+	ARGUMENTS:
+	String a_sInstance, // name of the instance to 
+	OUTPUT: MaterialClass* nullptr if not found
+	*/
+	MaterialClass* GetMaterialOnInstance(String a_sInstance, String a_sMaterial);
+	/*
+	USAGE: Duplicate the material in the instance disconnecting it from the model's
+	ARGUMENTS:
+	String a_sInstance, // name of the instance to modify
+	OUTPUT: ---
+	*/
+	void DuplicateMaterialsOnInstance(String a_sInstance);
 	/*
 	USAGE: Sets the texture for the font
 	ARGUMENTS:

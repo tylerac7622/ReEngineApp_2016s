@@ -293,6 +293,31 @@ namespace ReEng
 		*/
 		void SetTarget(vector3 a_vTarget, int a_nIndex = -1);
 
+		/*
+		USAGE: Sets the view Matrix overriding the internal values
+		note, to reset the camera to use internal values it needs to be reset
+		ARGUMENTS: matrix4 view matrix
+		int a_nIndex = -1 -> Index of the camera, -1 will use the active camera's index
+		OUTPUT: ---
+		*/
+		void SetViewMatrix(matrix4 input, int a_nIndex = -1);
+
+		/*
+		USAGE: Sets the projection Matrix overriding the internal values
+		note, to reset the camera to use internal values it needs to be reset
+		ARGUMENTS: matrix4 view matrix
+		int a_nIndex = -1 -> Index of the camera, -1 will use the active camera's index
+		OUTPUT: ---
+		*/
+		void SetProjectionMatrix(matrix4 input, int a_nIndex = -1);
+
+		/*
+		USAGE: Resets the value of the camera
+		ARGUMENTS: ---
+		OUTPUT: ---
+		*/
+		void ResetCamera(int a_nIndex = -1);
+
 	private:
 		/*
 		USAGE: Constructor

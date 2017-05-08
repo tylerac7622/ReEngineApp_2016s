@@ -17,6 +17,7 @@ class ReEngDLL InstanceClass
 	bool m_bVisible = true;			//Visibility flag
 	bool m_bVisibleAxis = false;	//Visible Axis flag
 	bool m_bCollidable = false;		//Collidable flag
+	bool m_bModified = false;		//Checks if the Instance was modified in any way (shader or material)
 
 	bool m_bFirstRun = true;
 	
@@ -266,6 +267,13 @@ public:
 	OUTPUT: ---
 	*/
 	void SwapMaterials(String a_sOldMaterialName, String a_sNewMaterialName);
+
+	/*
+	USAGE: Duplicate the materials in the instance disconnecting it from the model's
+	ARGUMENTS: ---
+	OUTPUT: ---
+	*/
+	void DuplicateMaterials(void);
 	/*
 	USAGE: We need to disconnect all the pointers that are shared among the instances and the model
 	ARGUMENTS: ---
@@ -330,6 +338,8 @@ public:
 	OUTPUT: group index
 	*/
 	int IsColliding(vector3 a_v3RayOrigin, vector3 a_v3RayDirection, float& a_fDistance);
+
+	bool IsModified(void);
 
 private:
 	

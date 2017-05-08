@@ -284,16 +284,39 @@ public:
 		int a_nCollidable = 1,
 		int a_nState = 0);
 	/*
-	USAGE: Modifies the material of the specified instance
+	USAGE: Replaces the specified material of one Instance in memory by a new material with the
+	name specified by newMaterial, using Original will keep the textures the instance already have
+	in memory. If DuplicateInstanceMaterial is not called it will modify all instances of the model
 	ARGUMENTS:
-	OUTPUT: ---
+	String a_sInstance, // name of the instance to modify
+	String a_sOldMaterialName, // name of the material to change
+	String a_sNewMaterialName, // new name for that material
+	String a_sDiffuseTexture = "Original", //new texture to load, Original for the same texture
+	String a_sNormalTexture = "Original", //new texture to load, Original for the same texture
+	String a_sSpecularTexture = "Original"); //new texture to load, Original for the same texture
+	OUTPUT: void
 	*/
-	void ModifyMaterial(String a_sInstance,
+	void ModifyMaterialOnInstance(String a_sInstance,
 		String a_sOldMaterialName,
 		String a_sNewMaterialName,
 		String a_sDiffuseTexture = "Original",
 		String a_sNormalTexture = "Original",
 		String a_sSpecularTexture = "Original");
+
+	/*
+	USAGE: Duplicate the material in the instance disconnecting it from the model's
+	ARGUMENTS:
+	String a_sInstance, // name of the instance to modify
+	OUTPUT: ---
+	*/
+	void DuplicateMaterialsOnInstance(String a_sInstance);
+	/*
+	USAGE: Returns the material pointer in the Material Manager from the specified Instance
+	ARGUMENTS:
+	String a_sInstance, // name of the instance to
+	OUTPUT: MaterialClass* nullptr if not found
+	*/
+	MaterialClass* GetMaterialOnInstance(String a_sInstance, String a_sMaterial);
 	/*
 	USAGE: Plays the specified animation
 	ARGUMENTS:
@@ -379,6 +402,8 @@ public:
 	OUTPUT: ---
 	*/
 	void InstanceSphere(float a_fDiameter, int a_nSubdivisions, vector3 a_v3Color, String a_sInstanceName);
+
+	bool IsInstanceModified(String a_sInstanceName);
 private:
 	//Rule of Three
 	/*
