@@ -14,7 +14,7 @@
     <ProjectGuid>{DBB63B9E-3E43-4E40-8601-29BE9FAC2ABD}</ProjectGuid>
     <RootNamespace>W05R_Rotations_DEMO</RootNamespace>
     <ProjectName>W05R_Rotations_DEMO</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

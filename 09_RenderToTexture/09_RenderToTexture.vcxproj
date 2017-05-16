@@ -14,7 +14,7 @@
     <ProjectGuid>{6054516C-BBA5-41F8-83C3-EADDE863B62F}</ProjectGuid>
     <RootNamespace>09_RenderToTexture</RootNamespace>
     <ProjectName>09_RenderToTexture</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

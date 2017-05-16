@@ -14,7 +14,7 @@
     <ProjectGuid>{CFC6D267-B5AA-4068-9A71-E307D84B19F1}</ProjectGuid>
     <RootNamespace>Ex01_Bs_DEMO</RootNamespace>
     <ProjectName>Ex01_Bs_DEMO</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

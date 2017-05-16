@@ -14,7 +14,7 @@
     <ProjectGuid>{08298E13-200D-4DB2-B7BA-EFE97509F814}</ProjectGuid>
     <RootNamespace>E14_CollisionResolution</RootNamespace>
     <ProjectName>E14_CollisionResolution</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

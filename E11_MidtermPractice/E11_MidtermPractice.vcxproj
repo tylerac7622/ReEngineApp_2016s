@@ -14,7 +14,7 @@
     <ProjectGuid>{1FBD25F3-8338-4126-BE77-DF3B49161AE9}</ProjectGuid>
     <RootNamespace>E11_MidtermPractice</RootNamespace>
     <ProjectName>E11_MidtermPractice</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

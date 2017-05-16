@@ -14,7 +14,7 @@
     <ProjectGuid>{ECF77324-3C73-4C41-A5FA-D2291E7748E0}</ProjectGuid>
     <RootNamespace>E13s_BoundingBoxClass</RootNamespace>
     <ProjectName>E13s_BoundingBoxClass_DEMO</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

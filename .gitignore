@@ -10,3 +10,4 @@ Z_DELETE/
 *.db
 tr.exe.stackdump
 Solution_VS15.sdf
+.vs/

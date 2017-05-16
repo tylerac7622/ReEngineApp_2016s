@@ -14,7 +14,7 @@
     <ProjectGuid>{C5B1E58E-F9B0-49EA-B7F8-1AE4CB57F3BE}</ProjectGuid>
     <RootNamespace>A11s_SAT</RootNamespace>
     <ProjectName>A11s_SAT_DEMO</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

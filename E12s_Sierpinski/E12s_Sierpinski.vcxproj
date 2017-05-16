@@ -14,7 +14,7 @@
     <ProjectGuid>{C12B2C32-E9C5-40DF-9931-C9C429B7B1F6}</ProjectGuid>
     <RootNamespace>E12s_Sierpinski</RootNamespace>
     <ProjectName>E12s_Sierpinski_DEMO</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -14,7 +14,7 @@
     <ProjectGuid>{13FA2754-46C1-49D8-B9A4-1DC856801931}</ProjectGuid>
     <RootNamespace>A10s_BoundingObjectSingleton</RootNamespace>
     <ProjectName>A10s_BoundingObjectSingleton_DEMO</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

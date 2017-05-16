@@ -14,7 +14,7 @@
     <ProjectGuid>{F1EDF2C3-8663-42FF-89D7-D0C4857D4358}</ProjectGuid>
     <RootNamespace>02_Inheriting</RootNamespace>
     <ProjectName>02_Inheriting</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

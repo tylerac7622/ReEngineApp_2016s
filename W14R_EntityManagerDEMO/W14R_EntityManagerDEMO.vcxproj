@@ -14,6 +14,7 @@
     <ProjectGuid>{AD27F8DF-F8E8-428B-9ABF-391FC128CD5C}</ProjectGuid>
     <RootNamespace>W14R_EntityManagerDEMO</RootNamespace>
     <ProjectName>W14R_EntityManagerDEMO</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

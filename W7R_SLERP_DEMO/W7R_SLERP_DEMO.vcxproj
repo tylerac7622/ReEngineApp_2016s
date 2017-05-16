@@ -14,7 +14,7 @@
     <ProjectGuid>{F586EF79-529C-4737-B8BD-79C899828529}</ProjectGuid>
     <RootNamespace>W07R_SLERP_DEMO</RootNamespace>
     <ProjectName>W07R_SLERP_DEMO</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

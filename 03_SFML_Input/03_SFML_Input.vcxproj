@@ -14,7 +14,7 @@
     <ProjectGuid>{1EA67B6E-CAF1-4F2A-8FB5-99B5D30E3004}</ProjectGuid>
     <RootNamespace>03_SFML_Input</RootNamespace>
     <ProjectName>03_Input</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

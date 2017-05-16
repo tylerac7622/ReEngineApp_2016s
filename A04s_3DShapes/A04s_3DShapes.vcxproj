@@ -14,7 +14,7 @@
     <ProjectGuid>{1249A06E-032E-4611-8749-E48CB5FCFF68}</ProjectGuid>
     <RootNamespace>A04s_3DShapes</RootNamespace>
     <ProjectName>A04s_3DShapes_DEMO</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
